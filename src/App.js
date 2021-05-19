@@ -1,10 +1,13 @@
-import Navbar from './components/Navbar';
+import { Navbar } from './components';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import GlobalStyle from './globalStyles';
 
 function App() {
 	return (
-		<div>
-			<h1>hello</h1>
-		</div>
+		<Router>
+			<GlobalStyle />
+			<Navbar />
+		</Router>
 	);
 }
 
