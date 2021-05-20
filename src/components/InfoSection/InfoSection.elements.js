@@ -38,3 +38,38 @@ export const TextWrapper = styled.div`
 		padding-bottom: 60px;
 	}
 `;
+export const TopLine = styled.div`
+	color: ${({ lightTopLine }) => (lightTopLine ? '#a9b3c1' : '#4B59F7')};
+	font-size: 18px;
+	margin-bottom: 16px;
+	line-height: 16px;
+	letter-spacing: 1.4px;
+`;
+export const Heading = styled.h1`
+	font-size: 48px;
+	margin-bottom: 24px;
+	line-height: 1.1;
+	color: ${({ lightText }) => (lightText ? '#F7F8FA' : '#1c2237')};
+`;
+
+export const Subtitle = styled.p`
+	max-width: 440px;
+	margin-bottom: 35px;
+	font-size: 18px;
+	line-height: 24px;
+	color: ${({ lightTextDesc }) => (lightTextDesc ? '#a9b3c1' : '#1c2237')};
+`;
+export const ImageWrapper = styled.div`
+	max-width: 555px;
+	display: flex;
+	justify-content: ${({ start }) => (start ? 'flex-start' : 'flex-end')};
+`;
+
+export const Img = styled.img`
+	padding-right: 0;
+	border: 0;
+	max-width: 100%;
+	display: inline-block;
+	vertical-align: middle;
+	max-height: 500px;
+`;
