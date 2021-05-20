@@ -5,11 +5,13 @@ import Home from './pages/homePage/Home';
 import Services from './pages/services/Services';
 import Products from './pages/products/Products';
 import SignUp from './pages/sign-up/SignUp';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
 	return (
 		<Router>
 			<GlobalStyle />
+			<ScrollToTop />
 			<Navbar />
 			<Switch>
 				<Route path='/' exact component={Home} />
